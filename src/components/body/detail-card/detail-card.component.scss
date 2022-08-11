@@ -1,0 +1,46 @@
+.title-section {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.left-card {
+  text-align: center;
+  .title { @extend .title-section }
+  img {
+    width: 150px; height: 150px;
+  }
+  div { font-weight: bold; font-size: 1.25rem; }
+}
+
+.center-card {
+  .title { @extend .title-section }
+  .content-center {
+    margin-bottom: 10px;
+    .stat-wrapper {
+      display: flex;
+      justify-content: space-between;
+      span { 
+        font-size: 13px; 
+        &:nth-of-type(1) {
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+}
+
+.right-card {
+  .title { @extend .title-section }
+  .stack-moves {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .MuiChip-root {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
